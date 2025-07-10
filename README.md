@@ -1,6 +1,6 @@
 # awsbilling
 
-Policy required for "addtags" function:
+Policy required for `addtags` function:
 
 ```
 {
