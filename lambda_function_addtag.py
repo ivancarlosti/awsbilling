@@ -220,7 +220,8 @@ def lambda_handler(event, context):
             key_id = alias.get('TargetKeyId')
             if alias_name.startswith('alias/aws/') or not key_id:
                 continue
-            tenant_value = alias_name
+            # FIX: Remove 'alias/' prefix for the tag value
+            tenant_value = alias_name[len('alias/'):] if alias_name.startswith('alias/') else alias_name
             try:
                 tags_resp = kms.list_resource_tags(KeyId=key_id)
                 existing_tenant = next((t['TagValue'] for t in tags_resp.get('Tags', []) if t['TagKey'] == 'Tenant'), None)
