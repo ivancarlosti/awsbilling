@@ -15,7 +15,7 @@
 # Configuration
 
 * Runtime: Python 3.13+
-* Architectune: x86_64 (may work on arm64)
+* Architectune: arm64/x86_64 (arm64 is cheaper)
 * Timeout: 1 minute
 * Requires related policy for each script
 
