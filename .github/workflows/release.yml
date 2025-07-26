@@ -71,16 +71,17 @@ jobs:
         run: |
           VERSION="${{ steps.version.outputs.VERSION }}"
           VERSION_FILE="manifest.json"
+          AUTHOR="Ivan Carlos"
 
           if [ -f "$VERSION_FILE" ]; then
             HAS_VERSION=$(jq 'has("version")' "$VERSION_FILE")
             if [ "$HAS_VERSION" = "true" ]; then
-              jq --arg v "$VERSION" '.version = $v' "$VERSION_FILE" > tmp.json && mv tmp.json "$VERSION_FILE"
+              jq --arg v "$VERSION" --arg a "$AUTHOR" '.version = $v | .author = $a' "$VERSION_FILE" > tmp.json && mv tmp.json "$VERSION_FILE"
             else
-              jq --arg v "$VERSION" '. + {version: $v}' "$VERSION_FILE" > tmp.json && mv tmp.json "$VERSION_FILE"
+              jq --arg v "$VERSION" --arg a "$AUTHOR" '. + {version: $v, author: $a}' "$VERSION_FILE" > tmp.json && mv tmp.json "$VERSION_FILE"
             fi
           else
-            echo "{ \"version\": \"$VERSION\" }" > "$VERSION_FILE"
+            echo "{ \"version\": \"$VERSION\", \"author\": \"$AUTHOR\" }" > "$VERSION_FILE"
           fi
 
       - name: 💾 Commit and push updated manifest.json
