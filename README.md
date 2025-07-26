@@ -21,9 +21,9 @@
 
 # Instruction
 
-* Create function
+* Create function using `.py` code 
 * Configure as specified below
-* Attach related policy on function's role
+* Attach related `.json` policy  on function's role
 
 # Remote call instruction
 
