@@ -12,6 +12,12 @@
 [![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-2.1-4baaaa)](https://github.com/ivancarlosti/awsbilling?tab=coc-ov-file)
 <!-- endbuttons -->
 
+# Configuration
+
+* Runtime: Python 3.13+
+* Architectune: x86_64 (may work on arm64)
+* Timeout: 1 minute
+
 Policy required for `addtags` function:
 
 ```
