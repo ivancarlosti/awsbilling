@@ -27,8 +27,8 @@
 
 # Remote call instruction
 
-* Create IAM user for remote function execution
-* Attach related policy on user
+* Create an IAM user for remote function execution
+* Attach related `remotecall_policy_lambda.json` policy on user
 
 <!-- footer -->
 ---
