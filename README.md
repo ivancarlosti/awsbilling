@@ -1,15 +1,15 @@
 # Lambda scripts
 
 <!-- buttons -->
-[![Stars](https://img.shields.io/github/stars/ivancarlosti/awsbilling?label=⭐%20Stars&color=gold&style=flat)](https://github.com/ivancarlosti/awsbilling/stargazers)
-[![Watchers](https://img.shields.io/github/watchers/ivancarlosti/awsbilling?label=Watchers&style=flat&color=red)](https://github.com/sponsors/ivancarlosti)
-[![Forks](https://img.shields.io/github/forks/ivancarlosti/awsbilling?label=Forks&style=flat&color=ff69b4)](https://github.com/sponsors/ivancarlosti)
-[![GitHub last commit](https://img.shields.io/github/last-commit/ivancarlosti/awsbilling?label=Last%20Commit)](https://github.com/ivancarlosti/awsbilling/commits)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ivancarlosti/awsbilling?label=Activity)](https://github.com/ivancarlosti/awsbilling/pulse)  
-[![GitHub Issues](https://img.shields.io/github/issues/ivancarlosti/awsbilling?label=Issues&color=orange)](https://github.com/ivancarlosti/awsbilling/issues)
-[![License](https://img.shields.io/github/license/ivancarlosti/awsbilling?label=License)](LICENSE)
-[![Security](https://img.shields.io/badge/Security-View%20Here-purple)](https://github.com/ivancarlosti/awsbilling/security)
-[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-2.1-4baaaa)](https://github.com/ivancarlosti/awsbilling?tab=coc-ov-file)
+[![Stars](https://img.shields.io/github/stars/ivancarlosti/lambdascripts?label=⭐%20Stars&color=gold&style=flat)](https://github.com/ivancarlosti/lambdascripts/stargazers)
+[![Watchers](https://img.shields.io/github/watchers/ivancarlosti/lambdascripts?label=Watchers&style=flat&color=red)](https://github.com/sponsors/ivancarlosti)
+[![Forks](https://img.shields.io/github/forks/ivancarlosti/lambdascripts?label=Forks&style=flat&color=ff69b4)](https://github.com/sponsors/ivancarlosti)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ivancarlosti/lambdascripts?label=Last%20Commit)](https://github.com/ivancarlosti/lambdascripts/commits)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ivancarlosti/lambdascripts?label=Activity)](https://github.com/ivancarlosti/lambdascripts/pulse)  
+[![GitHub Issues](https://img.shields.io/github/issues/ivancarlosti/lambdascripts?label=Issues&color=orange)](https://github.com/ivancarlosti/lambdascripts/issues)
+[![License](https://img.shields.io/github/license/ivancarlosti/lambdascripts?label=License)](LICENSE)
+[![Security](https://img.shields.io/badge/Security-View%20Here-purple)](https://github.com/ivancarlosti/lambdascripts/security)
+[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-2.1-4baaaa)](https://github.com/ivancarlosti/lambdascripts?tab=coc-ov-file)
 <!-- endbuttons -->
 
 # Configuration
