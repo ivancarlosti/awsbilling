@@ -30,6 +30,13 @@
 * Create an IAM user for remote function execution
 * Attach related `remotecall_policy_lambda.json` policy on user
 
+# Notes
+
+* AddTag script uses Alias to tag KMS keys
+* AddTag script uses Description to tag Route53 zones
+* Backup script uses 1 day as range window to gather fails and expired alerts
+* Billing and AddTag scripts uses "Tenant" tag set resources
+
 <!-- footer -->
 ---
 
