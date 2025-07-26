@@ -17,6 +17,7 @@
 * Runtime: Python 3.13+
 * Architectune: x86_64 (may work on arm64)
 * Timeout: 1 minute
+* Requires related policy for each script
 
 Policy required for `addtags` function:
 
