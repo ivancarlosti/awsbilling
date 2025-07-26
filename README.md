@@ -1,4 +1,4 @@
-# awsbilling
+# Lambda scripts
 
 <!-- buttons -->
 [![Stars](https://img.shields.io/github/stars/ivancarlosti/awsbilling?label=⭐%20Stars&color=gold&style=flat)](https://github.com/ivancarlosti/awsbilling/stargazers)
@@ -19,102 +19,16 @@
 * Timeout: 1 minute
 * Requires related policy for each script
 
-Policy required for `addtags` function:
+# Instruction
 
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:DescribeSnapshots",
-                "ec2:DescribeVolumes",
-                "ec2:DescribeImages",
-                "ec2:DescribeInstances",
-                "ec2:DescribeNetworkInterfaces",
-                "ec2:DescribeAddresses",
-                "ec2:CreateTags"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "kms:ListAliases",
-                "kms:ListResourceTags",
-                "kms:TagResource"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "route53:ListHostedZones",
-                "route53:ListTagsForResource",
-                "route53:ChangeTagsForResource"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
+* Create function
+* Configure as specified below
+* Attach related policy on function's role
 
-Policy required for `costs` function:
+# Remote call instruction
 
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ce:GetCostAndUsage",
-                "ce:GetCostAndUsageWithResources",
-                "ce:GetCostForecast",
-                "ce:GetDimensionValues",
-                "ce:GetReservationCoverage",
-                "ce:GetReservationPurchaseRecommendation",
-                "ce:GetReservationUtilization",
-                "ce:GetRightsizingRecommendation",
-                "ce:GetSavingsPlansCoverage",
-                "ce:GetSavingsPlansPurchaseRecommendation",
-                "ce:GetSavingsPlansUtilization",
-                "ce:GetTags",
-                "ce:GetUsageForecast"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
-
-Policy required to call Lambda functions externally:
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "lambda:InvokeFunction"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "lambda:ListFunctions",
-                "lambda:GetFunction",
-                "lambda:GetAccountSettings",
-                "lambda:ListTags"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
+* Create IAM user for remote function execution
+* Attach related policy on user
 
 <!-- footer -->
 ---
